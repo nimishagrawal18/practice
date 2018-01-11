@@ -1,12 +1,13 @@
 #include <stdio.h>
+#include<string.h>
 void main()
 {
-	char* a;
+	char a[100000];
 	scanf("%s",a);
-	char c;
-	while(*a!='\0')
+	int l=strlen(a)-1;
+	while(l!=-1)
 	{
-		a++;
-		printf("%c",*a);
+		printf("%c",a[l]);
+		l--;
 	}
 }
